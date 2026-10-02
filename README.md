@@ -4,7 +4,7 @@ A responsive puffer jacket storefront built with React, TypeScript, Vite, Tailwi
 
 ## Website showcase
 
-A 22-second walkthrough of the animated jacket colors, size selection, product details, and shopping bag.
+A 22-second, 60 fps showcase of the jacket flying from the lower-right preview into the center. It cycles through Pearl, Cherry, and Midnight, then demonstrates right-clicking to go back and clicking to advance again.
 
 ![Website showcase](docs/media/showcase.gif)
 
@@ -31,6 +31,8 @@ Includes coordinated color transitions, reduced-motion support, accessible nativ
 `public/images/puffer.png` was generated with the built-in image-generation tool using this prompt:
 
 > Photorealistic premium pearl silver puffer jacket cutout, straight-on front view, high padded collar, horizontal baffles, center zipper, hanging long sleeves, elastic cuffs, cropped waist. Detailed glossy nylon and stitching. Entire jacket on transparent background, no model, hanger, floor, shadow, text or logo. Softbox lighting; centered, filling 90% of square canvas.
+
+Click the “Next up” jacket to advance a color. Right-click it (or press Left Arrow while it is focused) to return to the previous color. The arrow buttons also work on touch devices. Each transition measures the preview and hero positions so the flight follows the responsive layout, and reduced-motion mode uses a brief fade.
 
 Dark and cherry variants use CSS color grading. Floating and transitions use CSS and Motion, not a 3D mesh. A GLB jacket model would be needed for genuine 360-degree viewing with React Three Fiber.
 
