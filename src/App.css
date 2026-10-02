@@ -5,3 +5,15 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 
 .mobile-cta{display:none}@media(max-width:760px){.hero-cta{display:none}.mobile-cta{display:flex;width:100%;justify-content:center;margin:15px 0 20px}.purchase{margin-bottom:28px}}
+
+/* Allow the jacket to fly between its measured thumbnail and hero positions. */
+.jacket-space{z-index:4;pointer-events:none}
+.in-flight{animation:none}
+.preview-jacket{display:block;width:74px;height:84px;flex-shrink:0}
+.preview-art{display:block;width:100%;height:100%}
+.next-preview .preview-art .jacket{width:100%;height:100%;transform:none}
+.next-preview:hover .preview-art .jacket{transform:none}
+.next-preview:disabled{cursor:progress}
+.icon-button:disabled{opacity:.5;transform:none}
+.showcase{transition:background-color 1.2s,color 1.2s}
+@media(max-width:760px){.preview-jacket{width:49px;height:60px}}
